@@ -1,0 +1,74 @@
+# DSP_Go
+
+Библиотека инструментов для цифровой обработки сигналов. 
+Попытка написать что-то собственное.
+# DSP Go Library
+
+## Установка
+```bash
+go get github.com/Alexxtn105/dsp
+```
+
+## Тестирование
+### Запуск всех тестов
+```bash
+go test ./...
+```
+### Запуск всех с подробным выводом
+```bash
+go test -v ./...
+```
+
+### Запуск только КИХ-тестов
+```bash
+go test ./filters/... -run "FIR"
+```
+
+### Запуск только БИХ-тестов
+```bash
+go test ./filters/... -run "IIR"
+```
+
+### Запуск только тестов фильтра Герцеля
+```bash
+go test ./filters/... -run "Goertzel"
+```
+
+### Запуск только генераторов
+```bash
+go test ./generators/...
+```
+
+### Запуск только генераторов
+```bash
+go test ./generators/... -run "TestInfo"
+```
+
+### Запуск только детекторов
+```bash
+go test ./detectors/...
+```
+
+### Запуск с покрытием кода
+```bash
+go test -cover ./...
+```
+
+### Запуск бенчмарков
+```bash
+go test -bench=./...
+```
+
+### Генерация godoc
+```bash
+godoc -http=:6060
+```
+
+### Просмотр тестового покрытия
+```bash
+go test -coverprofile=coverage.out ./filters/
+```
+
+```bash
+go tool cover -html=coverage.out
+```
