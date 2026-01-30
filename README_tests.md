@@ -61,6 +61,11 @@ go test ./detectors/...
 go test ./detectors/... -run TestNewFrequencyDetector
 ```
 
+### Запуск только преобпазователя Гильберта
+```bash
+go test ./hilbert/...
+```
+
 ### Запуск с покрытием кода
 ```bash
 go test -cover ./...
