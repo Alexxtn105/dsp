@@ -47,7 +47,7 @@ go test ./windows/... -run TestHannWindow
 go test ./windows/... -run TestKaiserWindow
 ```
 ```bash
-go test ./windows/... -run TestNatollWindow
+go test ./windows/... -run TestNuttallWindow
 ```
 ```bash
 go test ./windows/... -run TestTukeyWindow
