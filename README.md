@@ -20,17 +20,17 @@ go test -v ./...
 
 ### Запуск только КИХ-тестов
 ```bash
-go test ./filters/... -run "FIR"
+go test ./Filters/... -run "FIR"
 ```
 
 ### Запуск только БИХ-тестов
 ```bash
-go test ./filters/... -run "IIR"
+go test ./Filters/... -run "IIR"
 ```
 
 ### Запуск только тестов фильтра Герцеля
 ```bash
-go test ./filters/... -run "Goertzel"
+go test ./Filters/... -run "Goertzel"
 ```
 
 ### Запуск только генераторов
@@ -65,7 +65,7 @@ godoc -http=:6060
 
 ### Просмотр тестового покрытия
 ```bash
-go test -coverprofile=coverage.out ./filters/
+go test -coverprofile=coverage.out ./Filters/
 ```
 
 ```bash
