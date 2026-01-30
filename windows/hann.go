@@ -1,5 +1,7 @@
 package windows
 
+import "math"
+
 // Окно Хэннинга (также известно как Hann window)
 func hannWindow(N int) []float64 {
 	window := make([]float64, N)
