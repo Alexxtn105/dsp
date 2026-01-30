@@ -1,4 +1,4 @@
-package Filters
+package filters
 
 // FIRFilter представляет собой структуру КИХ-фильтра
 type FIRFilter struct {
