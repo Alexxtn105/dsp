@@ -57,6 +57,9 @@ go test ./windows/... -run TestTukeyWindow
 ```bash
 go test ./detectors/...
 ```
+```bash
+go test ./detectors/... -run TestNewFrequencyDetector
+```
 
 ### Запуск с покрытием кода
 ```bash
